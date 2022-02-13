@@ -1,0 +1,22 @@
+
+%container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    %list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    %transition{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+    %section{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }

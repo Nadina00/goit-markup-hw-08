@@ -1,0 +1,162 @@
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .container{
+        width: 768px;
+    }
+    .section {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      .hero{
+        padding-top: 118px;
+        padding-bottom: 118px; 
+        height: 400px; 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_768\ img.jpg);
+               
+        }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_768\ img@2x.jpg);
+          }
+        }
+    
+    .menu-toggle{
+        display: none;
+    }
+    .header{
+        height: 80px;
+    }
+    .header__logo{
+        margin-right: 84px;
+    }
+    .contact__list{
+    flex-wrap:wrap;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: auto;
+
+    }
+    .contact__item{
+        margin-left: 0;
+    }
+    .contact__link{
+        padding: 0;
+        width: 138px;
+        height: 14px;
+        font-size: 12px;
+    }
+    .contact__link + .contact__link{
+        margin-top: 10px;
+    }
+    .modal{
+        width: 450px;
+        height: 609px;
+    }
+    .check__text, .check__conditions{
+        font-size: 12px;
+        line-height: 1.16;
+        }
+        .peculiarities__list{
+            flex-wrap: wrap;
+        }
+        .peculiarities__item{
+            width: 354px;
+        }
+        .peculiarities__item:nth-child(even){
+            margin-right: 0;
+        }
+        .peculiarities__subtitle::before{
+            width: 354px;
+        }
+        .works{
+            display: none;
+        }
+        .team__list {
+            flex-wrap: wrap;
+        }
+    .team__item{
+            width: 354px;
+            margin-right: 30px;
+                   }
+    .olga{
+        margin-right: 0;
+    }
+    .team__item:nth-last-child(-n+2){
+        margin-top: 30px;
+    }
+    .team__foto{
+        width: 100%;
+    }
+    .social__list{
+        justify-content: center;
+    }
+        .clents__list{
+            flex-wrap: wrap;
+        }
+        .client__item{
+            width: 226px;
+        }
+        .client__item:nth-child(3){
+            margin-right: 0;
+        }
+       
+        .client__item:nth-last-child(-n+3){
+            margin-top: 30px;
+        }
+
+        .footer__style{
+            flex-wrap: wrap;
+        }
+        .footer__address{
+            margin-left: 76px;
+        }
+        .social {
+            margin-left: auto;
+            margin-right: 89px;
+        }
+        .footer__form {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+        .form__title{
+            display: block;
+            text-align: center;
+        }
+        .footer__meaning {
+            display: block;
+            width: 450px;
+        } 
+        .footer__input{
+            width: 450px;
+            margin-bottom: 20px;
+        }
+        .footer__button{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
+        /*порфолио*/
+
+        .project__item{
+        width: 354px;
+        margin-left: 30px;
+        margin-right: 0;
+       }
+       .project__item:nth-child(odd){
+           margin-left: 0;
+       }
+       .project__position{
+           width: 354px;
+       }
+       .project__image{
+           width: 100%;
+       }
+        .menu-container{
+            display: none;
+        }
+}

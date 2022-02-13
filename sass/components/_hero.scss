@@ -1,0 +1,60 @@
+.section{
+    @extend %section;
+    }
+    .hero{
+        background: #2F303A;
+        text-align: center;
+        height: 600px;
+        max-width: 1600px;
+        display: block;
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)),
+        url(../../image/Header_1200\ img.jpg);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_1200\ img@2x.jpg);
+          }
+        }
+    .hero__title {
+    color: $address-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /*width: 696px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+    }
+    .hero__button {
+    background-color: $logo-color;
+    color: $address-color;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: 0;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    transition-property: background-color, color;
+    @extend %transition;
+    
+    &:hover, &:focus,
+    &:active{
+        background-color: $background-buttom;
+        color: $address-color;
+        cursor: pointer;
+    }}
