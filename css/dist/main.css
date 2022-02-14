@@ -13,6 +13,9 @@ body {
   .container {
     width: 480px;
   }
+  .hero {
+    background-image: url(../../image/Header_480img.jpg);
+  }
 }
 
 @media (min-width: 768px) {
@@ -214,8 +217,8 @@ body {
   height: 600px;
   max-width: 1600px;
   display: block;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_1200\ img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_1200img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_1200img.jpg);
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -223,11 +226,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_1200\ img@2x.jpg);
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_1200img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_1200img@2x.jpg);
   }
 }
 
@@ -703,7 +706,6 @@ body {
 }
 
 .team__item {
-  /*width: 270px;*/
   background-color: #FFFFFF;
   margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1249,17 +1251,23 @@ height: 50px;*/
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+    width: 480px;
     height: 400px;
     position: relative;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_480\ img.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_480\ img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_480img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_480img.jpg);
+    background-size: cover;
   }
 }
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_480img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_480img@2x.jpg);
+  }
+}
+
+@media (max-width: 767px) {
   .hero__title {
     width: 360px;
     font-size: 16px;
@@ -1313,6 +1321,9 @@ height: 50px;*/
     display: block;
   }
   .team__item {
+    width: 450px;
+  }
+  .mobile {
     width: 450px;
   }
   .team__foto {
@@ -1562,16 +1573,19 @@ height: 50px;*/
     padding-top: 118px;
     padding-bottom: 118px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_768\ img.jpg);
-    }
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          .hero{
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_768\ img@2x.jpg);
-          }
-        
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_768img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_768img.jpg);
   }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header_768img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header_768img@2x.jpg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .menu-toggle {
     display: none;
   }
