@@ -32,7 +32,7 @@
 }
 .hero__title {
 width: 360px;
-font-size: 16px;
+font-size: 26px;
 line-height: 1.62;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -52,7 +52,7 @@ padding: 10px 32px;
     }
     
     .backdrop{
-        width: 100vw;
+        max-width: 100%;
         overflow-y: scroll;
     }
     .modal{
@@ -66,6 +66,14 @@ padding: 10px 32px;
     
 .peculiarities__list{
     display: block;
+}
+.peculiarities__item{
+  margin-bottom: 30px;
+  margin-right: 0;
+  
+  &:nth-child(4){
+    margin-bottom: 0;
+  }
 }
 .peculiarities__subtitle{
     text-align: center;
@@ -84,7 +92,7 @@ padding: 10px 32px;
 }
 
 .team__item {
-  width: 450px;
+  max-width: 450px;
 }
 .mobile{
   width: 450px;
@@ -111,6 +119,9 @@ width: 100%;
     display: block;
     text-align: center;
 }
+.footer__standart{
+  display: block;
+}
 .social {
     margin-left: auto;
     margin-right: auto;
@@ -118,6 +129,7 @@ width: 100%;
 }
 .footer-social__list{
     justify-content: center;
+    
 }
 .footer__form{
     margin-top: 60px;
@@ -128,13 +140,15 @@ width: 100%;
     text-align: center;
 }
 .footer__input{
-    width: 100%;
+    width:100%;
 }
 
 .footer__button{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    width: 200px;
+    height: 50px;
 }
 /*порфолио*/
 .filter_list {
@@ -150,6 +164,7 @@ margin-right: 0;
  .project__item {
      margin-right: 0;
      margin-bottom: 30px;
+     max-width: 450px;
  }
  .project__item:nth-last-child(-n+3){
     margin-bottom: 30px
@@ -197,9 +212,7 @@ justify-content: space-between;
     display: none;
   }
 }
-  
-  
-  
+      
   .menu-toggle .icon__close{
     display: none;
   }
@@ -215,14 +228,14 @@ justify-content: space-between;
     position: absolute;
     top: 80px;
     left: 0;
-    width: 100vw;
+    max-width: 480px;
     height: 796px;
     overflow-y: scroll;
     padding: 0;
     background-color: $address-color;
     overflow: scroll;
     z-index: 999;
-    
+       
   }
   
   .menu-container.is-open {
@@ -256,9 +269,13 @@ text-align: start;
 letter-spacing: 0.02em;
 color: $second-color;
 text-decoration: none; 
-  }
-  .mobile__link:hover, .mobile__link:focus{
+  
+  &:hover, &:focus{
       color: $logo-color;
+  }
+  &--curren{
+    color:  $logo-color;
+  }
   }
   .contact__mobile__list{
     display: block;
@@ -290,6 +307,9 @@ color: $first-color;
          display: flex;
          margin-top: 64px;
          list-style: none;
+         padding-left: 0;
+      margin-left: 40px;
+      margin-right: 83px;
      }
      .social__mobile__item + .social__mobile__item{
        margin-left: 20px;  

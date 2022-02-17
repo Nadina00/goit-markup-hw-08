@@ -21,6 +21,7 @@
         (min-resolution: 2dppx) {
           .hero{
             background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_1200img@2x.jpg);
+          max-width: 1600px;
           }
         }
     .hero__title {
@@ -30,7 +31,7 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /*width: 696px;*/
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;

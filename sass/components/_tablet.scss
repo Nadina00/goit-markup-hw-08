@@ -42,16 +42,24 @@
     }
     .contact__item{
         margin-left: 0;
+            
     }
+    .contact__item + .contact__item{
+        margin-top: 10px;
+    } 
     .contact__link{
+        padding-top: 20px;
         padding: 0;
         width: 138px;
         height: 14px;
-        font-size: 12px;
-    }
-    .contact__link + .contact__link{
-        margin-top: 10px;
-    }
+        font-size: 12px;}
+      
+        .contact__link--tel{
+        padding-top: 0;
+        padding-bottom: 20px;
+        }
+    
+   
     .modal{
         width: 450px;
         height: 609px;
@@ -66,6 +74,10 @@
         .peculiarities__item{
             width: 354px;
         }
+        .peculiarities__item:nth-child(-n+2){
+        margin-bottom: 30px;
+        }
+
         .peculiarities__item:nth-child(even){
             margin-right: 0;
         }
@@ -110,13 +122,24 @@
 
         .footer__style{
             flex-wrap: wrap;
-        }
-        .footer__address{
-            margin-left: 76px;
-        }
-        .social {
             margin-left: auto;
-            margin-right: 89px;
+            margin-right: auto;
+        }
+        .footer__tablet{
+            display: flex;
+            padding-left: 76px;
+            padding-right: 89px;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: space-between;
+        }
+        .footer__address {
+            width: 232px;
+        }
+        
+        .social {
+            margin-left: 165px;
+            
         }
         .footer__form {
             margin-left: auto;
@@ -133,22 +156,29 @@
         } 
         .footer__input{
             width: 450px;
+            margin-right: 0;
             margin-bottom: 20px;
         }
         .footer__button{
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 60px;
+            max-width: 200px;
+            height: 50px;
         }
         /*порфолио*/
 
         .project__item{
-        width: 354px;
+        max-width: 354px;
         margin-left: 30px;
         margin-right: 0;
        }
+       
        .project__item:nth-child(odd){
            margin-left: 0;
+       }
+       .project__subtitle{
+           letter-spacing: 0.06em;
        }
        .project__position{
            width: 354px;

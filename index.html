@@ -41,7 +41,7 @@
                         <use href="./image/icons.svg#icon-envelope" width="16" height="12"></use>
                     </svg> info@devstudio.com</a></li>
             <li class="contact__item">
-                <a href="tel:+380961111111" class="contact__link">
+                <a href="tel:+380961111111" class="contact__link contact__link--tel ">
                     <svg width="10" height="16" class="contact__icon">
                         <use href="./image/icons.svg#icon-smartphone" width="10" height="16"></use>
                     </svg> +38 096 111 11 11</a></li>
@@ -155,7 +155,7 @@
                     ./image/team1_768img@2x.jpg 2x,
                     ./image/team1_1200img.jpg,
                     ./image/team1_1200img@2x.jpg 2x"
-                     src="./image/team1_450img.jpg" alt="фото Игорь Демьяненко"
+                     src="./image/team1_450img.jpg" width="270" alt="фото Игорь Демьяненко"
                      sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
@@ -199,7 +199,7 @@
                     ./image/team2_768img@2x.jpg 2x,
                     ./image/team2_1200img.jpg,
                     ./image/team2_1200img@2x.jpg 2x"
-                     src="./image/team2_450img.jpg" alt="фото Ольга Репина"
+                     src="./image/team2_450img.jpg" width="270" alt="фото Ольга Репина"
                      sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
@@ -244,7 +244,7 @@
                     ./image/team3_768img@2x.jpg 2x,
                     ./image/team3_1200img.jpg,
                     ./image/team3_1200img@2x.jpg 2x"
-                     src="./image/team3_450img.jpg" alt="фото Николай Тарасов"
+                     src="./image/team3_450img.jpg" width="270" alt="фото Николай Тарасов"
                      sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
@@ -284,12 +284,12 @@
                 </li>
                 <li class="team__item mobile">
                     <img srcset="./image/team4_450img.jpg,
-                    ./image/team4_450img@2x.jpg 2x,
-                    ./image/team4_768img.jpg,
-                    ./image/team4_768img@2x.jpg 2x,
-                    ./image/team4_1200img.jpg,
-                    ./image/team4_1200img@2x.jpg 2x"
-                     src="./image/team4_450img.jpg" alt="фото Михаил Ермаков"
+                    ./image/team4_450img@2x.jpg 100vw,
+                    ./image/team4_768img.jpg 50vw,
+                    ./image/team4_768img@2x.jpg 50vw,
+                    ./image/team4_1200img.jpg 25vw,
+                    ./image/team4_1200img@2x.jpg 25vw"
+                     src="./image/team4_450img.jpg" width="270" alt="фото Михаил Ермаков"
                      sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
@@ -386,7 +386,8 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer__style">
+        <div class="footer__style container">
+            <div class="footer__tablet footer__standart">
             <div class="footer__address">
         <a href="" class="logo__footer">Web<span class="logo__footer--style">Studio</span></a>
         <address class="address">
@@ -435,7 +436,7 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div></div>
     <div class="footer__form">
         <strong class="form__title">Подпишитесь на рассылку</strong> 
         <form class="footer__meaning">
@@ -452,7 +453,7 @@
     </footer>
 <div class="menu-container" id="mobile-menu" data-menu>
             <ul class="mobile-menu__list">
-            <li class="mobile__item"><a href="" class="mobile__link">Студия </a></li>
+            <li class="mobile__item"><a href="" class="mobile__link mobile__link--curren">Студия </a></li>
             <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a> </li>
             <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
     </ul>
