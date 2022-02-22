@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="./css/dist/main.min.css" rel="stylesheet"/>
 </head>
-<body>
-    <header class="header">
+<body >
+        <header>
         <div class="container header">
         <nav>
             <div class="header__nav">
@@ -30,7 +30,7 @@
             <ul class="nav__list">
             <li class="nav__item"><a href="" class="nav__link nav__link--current">Студия </a></li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a> </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            <li class="nav__item nav__item--contact"><a href="" class="nav__link ">Контакты</a></li>
         </ul>
         </div>
       </nav>
@@ -42,7 +42,7 @@
                     </svg> info@devstudio.com</a></li>
             <li class="contact__item">
                 <a href="tel:+380961111111" class="contact__link contact__link--tel ">
-                    <svg width="10" height="16" class="contact__icon">
+                    <svg width="10" height="16" class="contact__icon contact__icon--mailo ">
                         <use href="./image/icons.svg#icon-smartphone" width="10" height="16"></use>
                     </svg> +38 096 111 11 11</a></li>
         </ul> 
@@ -148,7 +148,7 @@
             <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
-                <li class="team__item mobile">
+                <li class="team__item ">
                     <img srcset="./image/team1_450img.jpg,
                     ./image/team1_450img@2x.jpg 2x,
                     ./image/team1_768img.jpg,
@@ -156,7 +156,7 @@
                     ./image/team1_1200img.jpg,
                     ./image/team1_1200img@2x.jpg 2x"
                      src="./image/team1_450img.jpg" width="270" alt="фото Игорь Демьяненко"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
                     <h3 class="team__name">Игорь Демьяненко</h3>
@@ -192,7 +192,7 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item olga mobile">
+                <li class="team__item olga ">
                     <img srcset="./image/team2_450img.jpg,
                     ./image/team2_450img@2x.jpg 2x,
                     ./image/team2_768img.jpg,
@@ -200,7 +200,7 @@
                     ./image/team2_1200img.jpg,
                     ./image/team2_1200img@2x.jpg 2x"
                      src="./image/team2_450img.jpg" width="270" alt="фото Ольга Репина"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
                     <h3 class="team__name">Ольга Репина</h3>
@@ -237,7 +237,7 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item mobile">
+                <li class="team__item ">
                     <img srcset="./image/team3_450img.jpg,
                     ./image/team3_450img@2x.jpg 2x,
                     ./image/team3_768img.jpg,
@@ -245,7 +245,7 @@
                     ./image/team3_1200img.jpg,
                     ./image/team3_1200img@2x.jpg 2x"
                      src="./image/team3_450img.jpg" width="270" alt="фото Николай Тарасов"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
                     <h3 class="team__name">Николай Тарасов</h3>
@@ -282,7 +282,7 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item mobile">
+                <li class="team__item ">
                     <img srcset="./image/team4_450img.jpg,
                     ./image/team4_450img@2x.jpg 100vw,
                     ./image/team4_768img.jpg 50vw,
@@ -290,7 +290,7 @@
                     ./image/team4_1200img.jpg 25vw,
                     ./image/team4_1200img@2x.jpg 25vw"
                      src="./image/team4_450img.jpg" width="270" alt="фото Михаил Ермаков"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 480px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) and (max-width: 1199px) 50vw, (max-width: 767px) 100vw"
                      class="team__foto">
                     <div class="team__conteiner">
                     <h3 class="team__name">Михаил Ермаков</h3>
@@ -489,6 +489,8 @@
     <script defer src="js/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
     <script src="./JS/mobil.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -25,7 +25,7 @@
     &::before{
         content: "";
         display: block;
-        width: 270px;
+        max-width: 270px;
         height: 120px;
         background: $background-second;
     border-radius: 4px;  

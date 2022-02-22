@@ -2,10 +2,15 @@
    @extend %list;
     display: flex;
     flex-wrap: wrap;
+    flex-basis: auto;
+    flex: 1;
         }
    .project__item{
+        max-width: 370px;
         margin-right: 30px;
         margin-bottom: 30px;
+        flex: 2;
+        flex-basis: content;
         transition-property: box-shadow;
         @extend %transition;      
     
@@ -63,7 +68,7 @@
     .project__position{
         overflow: hidden;
         display: block;
-        width: 370px;
+        max-width: 370px;
         position: relative;
         transition-property: opacity, transform;
         @extend %transition;

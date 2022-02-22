@@ -28,6 +28,7 @@ border: $background-second;
 border-radius: 4px;
 position: relative;
 
+
 transition-property: background-color, color, box-shadow;
 @extend %transition;
 

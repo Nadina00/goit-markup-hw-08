@@ -14,6 +14,7 @@
     .works__list, .team__list, .clents__list{
        @extend %list;
         display: flex;
+        justify-content: center;
      }
      .work__foto{
         display: block;

@@ -1,5 +1,6 @@
 .container{
     @extend %container;
+    max-width: 1200px;
         }
     
 .header{
@@ -10,11 +11,13 @@
     display: flex;
     align-items: center;
     max-width: 1200px;
+    flex-basis: content;
 } 
 }
 .nav__list{
     @extend %list;
     display: flex;
+    flex-basis: content;
     }
     .nav__item{
     margin-right: 50px;
@@ -77,6 +80,7 @@
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
+    flex-basis: content;
     align-items: center;
     }
     .contact__item{
@@ -101,3 +105,11 @@
     transition-property:  color;
     @extend %transition;
         }
+        @media  (min-width: 481px){
+        .menu-toggle{
+            display: none;}
+        .menu-container{
+            display: none;
+        }
+        
+    }
