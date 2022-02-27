@@ -5,7 +5,7 @@
 .form__title{
     font-weight: bold;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $address-color;
@@ -58,4 +58,5 @@ cursor: pointer;
 }
 .button__icon--send{
 margin-left: 10px;
+margin-right: 13px;
 }

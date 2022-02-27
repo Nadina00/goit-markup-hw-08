@@ -18,7 +18,8 @@
       }
       .header{
           max-width: 768px;
-        flex-basis: auto;}
+        flex-basis: auto;
+        border-bottom: 1px solid #ECECEC;}
 
          .header__nav{
             max-width: 768px;
@@ -47,6 +48,13 @@
             background-image: linear-gradient(rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../../image/Header_768img@2x.jpg);
           }
         }
+    .hero__title{
+    font-size: 26px;
+    line-height: 1.61;
+    display: block;
+    width: 360px;
+
+    }
     
     .menu-toggle{
         display: none;
@@ -65,7 +73,7 @@
     
     .contact__icon{
         position: absolute;
-        top: 0;
+        top: 15px;
         left: -20px;
     }
     .contact__icon--mailo{
@@ -82,16 +90,14 @@
     } 
     .contact__link{
         display: block;
+        padding-bottom: 0;
         padding-top: 15px;
-        padding: 0;
         max-width: 138px;
-        height: 14px;
-        font-size: 12px;
-        position: relative;}
+        font-size: 12px;}
       
         .contact__link--tel{
         padding-top: 0;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         }
     
         .backdrop{
@@ -121,12 +127,15 @@
             margin-right: 0;
         }
         .peculiarities__subtitle::before{
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 354px;
+            
+
         }
         .works{
             display: none;
+        }
+        .team__title, .clients__title{
+            font-size: 28px;
         }
         .team__list {
             flex-wrap: wrap;

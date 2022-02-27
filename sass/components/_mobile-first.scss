@@ -5,10 +5,7 @@
     .menu-container{
       width: 480px;
     }
-    .modal{
-      width: 450px;
-    }
-    
+   
   }
   @media (max-width: 767px){
     .section {
@@ -20,7 +17,7 @@
     .header{
         display: block;
         position: relative;
-        
+        border-bottom: 1px solid #ECECEC;
     }
     .header__logo{
       font-size: 24px;
@@ -71,7 +68,7 @@ padding: 10px 32px;
       overflow: hidden;
     }
     .modal{
-    max-width: 450px;
+    width: 96%;
     height: 609px;
     }
     .check__text, .check__conditions{
@@ -178,6 +175,11 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
  }
+ @media (max-width: 392px){
+ .filter__button{
+padding: 6px 10px;
+ }
+}
  .filter__item:nth-child(3){
 margin-right: 0;
  }
@@ -186,6 +188,9 @@ margin-right: 0;
  }
  .project__list{
    justify-content: center;
+ }
+ .project__link {
+   overflow: auto;
  }
  .project__item {
      margin-right: 0;
@@ -205,6 +210,12 @@ margin-bottom: 0;
  }
  .project__image{
    width: 100%;
+ }
+ @media (max-width: 388px){
+  .project__hover{
+    font-size: 16px;
+    width: 285px;
+  }
  }
  /*модальное меню*/
  
@@ -233,11 +244,13 @@ justify-content: space-between;
     border: none;
     border-radius: 50%;
     outline: none;
+    
   
     @media (min-width: 768px) {
         display: none;
       }
   }
+ 
   @media (min-width: 768px){
   .menu-toggle.is-open{
     display: none;
@@ -257,41 +270,53 @@ justify-content: space-between;
   .menu-container {
     display: none;
     position: fixed;
-    top: 76px;
+    top: 0px;
     left: 0;
-    width: 100%;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
     overflow-y: hidden;
     padding: 0;
     background-color: $address-color;
-    @media (min-width: 480px) and (max-width: 768px){
-      width: 480px;
-    }
+    z-index: 1;
+       
+  }
+  .menu-toggle--close{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+        
+  }
+  .menu-toggle--close:hover{
+    fill: $logo-color;
   }
   
   .menu-container.is-open {
     display: block;
-    body  {
-      overflow: hidden;
-    }
+    padding: 48px 40px;
+    
   }
  
-
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
   
   
  .icon__close, .icon__menu{
     fill: $second-color;
       }
-      .menu-toggle:hover .icon__close, .menu-toggle:focus .icon__close,
+      .menu-toggle--close:hover .menu-close, .menu-toggle--close:focus .menu-close,
       .menu-toggle:hover .icon__menu, .menu-toggle:focus .icon__menu{
 fill: $logo-color;
     }
   
   .mobile-menu__list {
     padding: 0;
-    margin-top: 48px;
-    margin-left: 40px;
     list-style: none;
+    margin: 0;
   }
   
    .mobile__item + .mobile__item{
@@ -319,8 +344,8 @@ text-decoration: none;
     align-items: end;
     list-style: none;
     margin: 0;
-    margin-top: 302px;
-  }
+    padding-left: 0;
+     }
   .contact__mobile__item + .contact__mobile__item{
       margin-top: 32px;
   }
@@ -339,20 +364,31 @@ color: $first-color;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $logo-color;
+    @media (max-width: 370px){
+      font-size: 27px;
+    }
      }
      .social__mobile__list{
          display: flex;
          margin-top: 64px;
          list-style: none;
          padding-left: 0;
-      margin-left: 40px;
-      margin-right: 83px;
-      flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+        @media (max-width: 427px){
+          justify-content: center;
+          .social__mobile__item--fac{
+            margin-left: 0;
+          }
+        }
      }
      .social__mobile__item + .social__mobile__item{
-       margin-left: 20px;  
+       margin-left: 10px;  
        list-style: none;
+       padding-left: 10px;
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
      }
+     
+     
      .social__mobile__link{
       text-decoration: none; 
       font-weight: 500;
@@ -360,6 +396,7 @@ color: $first-color;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $logo-color;
-  
-     }
+             }
+
+ 
 }
