@@ -122,6 +122,12 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   max-width: 450px;}
+  
+  .client__link{
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .client__item{
   
@@ -279,6 +285,9 @@ justify-content: space-between;
     padding: 0;
     background-color: $address-color;
     z-index: 1;
+    transition-property: display;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        
   }
   .menu-toggle--close{
@@ -294,6 +303,9 @@ justify-content: space-between;
   .menu-container.is-open {
     display: block;
     padding: 48px 40px;
+    transition-property: display;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
  
@@ -307,6 +319,9 @@ justify-content: space-between;
   
  .icon__close, .icon__menu{
     fill: $second-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       .menu-toggle--close:hover .menu-close, .menu-toggle--close:focus .menu-close,
       .menu-toggle:hover .icon__menu, .menu-toggle:focus .icon__menu{
