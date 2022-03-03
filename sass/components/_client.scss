@@ -25,7 +25,7 @@
     height: 100%;
     fill: $social-color;
     position: relative;
-    transition-property: color, border;
+    transition-property: fill, border;
     @extend %transition;
 
 &:hover, &:focus{

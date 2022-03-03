@@ -5,6 +5,10 @@
     .menu-container{
       width: 480px;
     }
+    .modal{
+      width: 450px;
+      height: 609px;
+    }
    
   }
   @media (max-width: 767px){
@@ -67,10 +71,12 @@ padding: 10px 32px;
     body .modal-open {
       overflow: hidden;
     }
+    @media (max-width: 480px){
     .modal{
     width: 96%;
     height: 609px;
     }
+  }
     .check__text, .check__conditions{
     font-size: 12px;
     line-height: 1.16;
@@ -121,10 +127,10 @@ width: 100%;
 .clents__list{
     flex-wrap: wrap;
     justify-content: center;
-  max-width: 450px;}
+  }
   
   .client__link{
-    transition-property: color, border;
+    transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -274,7 +280,8 @@ justify-content: space-between;
   }
     
   .menu-container {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
     top: 0px;
     left: 0;
@@ -285,7 +292,7 @@ justify-content: space-between;
     padding: 0;
     background-color: $address-color;
     z-index: 1;
-    transition-property: display;
+    transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        
@@ -294,6 +301,9 @@ justify-content: space-between;
     position: absolute;
     top: 20px;
     right: 15px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
   }
   .menu-toggle--close:hover{
@@ -301,9 +311,11 @@ justify-content: space-between;
   }
   
   .menu-container.is-open {
+    opacity: 1;
+    pointer-events: all;
     display: block;
     padding: 48px 40px;
-    transition-property: display;
+    transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -345,10 +357,15 @@ line-height: 1.18;
 text-align: start;
 letter-spacing: 0.02em;
 color: $second-color;
-text-decoration: none; 
+text-decoration: none;
+transition-property: color;
+transition-duration: 250ms; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   
   &:hover, &:focus{
       color: $logo-color;
+      
   }
   &--curren{
     color:  $logo-color;
@@ -386,16 +403,24 @@ color: $first-color;
      .social__mobile__list{
          display: flex;
          margin-top: 64px;
+         margin-bottom: 0;
          list-style: none;
          padding-left: 0;
         flex-wrap: wrap;
         @media (max-width: 427px){
-          justify-content: center;
+          flex-direction: column;
           .social__mobile__item--fac{
+            margin-left: 0;}
+            .social__mobile__item + .social__mobile__item{
             margin-left: 0;
+            padding-left: 0;
+            margin-top: 5px;
+            border-left: none;
+            }
+
           }
         }
-     }
+     
      .social__mobile__item + .social__mobile__item{
        margin-left: 10px;  
        list-style: none;

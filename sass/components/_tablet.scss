@@ -70,17 +70,15 @@
     /*flex-wrap: wrap;*/
     margin-left: auto;
     }
-    
     .contact__icon{
-        position: absolute;
-        top: 15px;
-        left: -20px;
+        margin-right: 7px;
     }
-    .contact__icon--mailo{
-        position: absolute;
-        top: -6px;
+    .icon--contact{
+        width: 14px;
+        height: 10px;
     }
-    .contact__item{
+   
+       .contact__item{
         margin-left: 0;
         display: block;
             
@@ -89,7 +87,7 @@
         margin-top: 15px;
     } 
     .contact__link{
-        display: block;
+        display: flex;
         padding-bottom: 0;
         padding-top: 15px;
         max-width: 138px;
